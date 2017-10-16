@@ -48,7 +48,7 @@ void		init_specificator_tail(t_specificator *s)
 	s[0].ptr = handle_s;
 	s[1].ptr = handle_ls;
 	s[2].ptr = handle_c;
-	s[3].ptr = handle_lc;
+	s[3].ptr = handle_c;
 	s[4].ptr = handle_d;
 	s[5].ptr = handle_ld;
 	s[6].ptr = handle_d;

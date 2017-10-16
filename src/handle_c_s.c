@@ -26,7 +26,7 @@ int			handle_c(t_flag *f, va_list *ap)
 	mask[4] = 1;
 	mask[10] = 1;
 	not_elon_but_musk(f, mask);
-	if (f->f_tab[10] == 1)
+	if (f->f_tab[10] == 1 || f->spe == 'C')
 		return (cast_lc(f, ap));
 	else
 		costyl(f, ap);
@@ -35,21 +35,21 @@ int			handle_c(t_flag *f, va_list *ap)
 	return (0);
 }
 
-int			handle_lc(t_flag *f, va_list *ap)
-{
-	int		mask[13];
-	int		i;
+// int			handle_lc(t_flag *f, va_list *ap)
+// {
+// 	// int		mask[13];
+// 	// int		i;
 
-	i = -1;
-	while (++i < 13)
-		mask[i] = 2;
-	mask[0] = 1;
-	mask[1] = 1;
-	mask[3] = 1;
-	mask[4] = 1;
-	not_elon_but_musk(f, mask);
-	return (cast_lc(f, ap));
-}
+// 	// i = -1;
+// 	// while (++i < 13)
+// 	// 	mask[i] = 2;
+// 	// mask[0] = 1;
+// 	// mask[1] = 1;
+// 	// mask[3] = 1;
+// 	// mask[4] = 1;
+// 	// not_elon_but_musk(f, mask);
+// 	// return (cast_lc(f, ap));
+// }
 
 int			handle_s(t_flag *f, va_list *ap)
 {
